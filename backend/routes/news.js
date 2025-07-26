@@ -28,7 +28,7 @@ router.get('/headlines', async (req, res) => {
       }
     }
 
-    res.json({ message: "Articles fetched and stored", count: articles.length });
+    res.json({ message: "Articles fetched and stored", count: articles.length, data: response.data });
   } catch (error) {
     console.error('News API error:', error.message);
     res.status(500).json({

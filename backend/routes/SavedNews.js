@@ -3,7 +3,7 @@ import { Article } from '../models/article.js';
 
 const router = express.Router();
 
-router.get('/saved', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const articles = await Article.find()
       .sort({ publishedAt: -1 })
