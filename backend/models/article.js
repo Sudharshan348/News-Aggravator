@@ -6,6 +6,7 @@ const articleschema = new mongoose.Schema({
     source: String,
     publishedAt: String,
     content: String,
+    category: String,
 },
 {timestamps: true})
 
