@@ -37,7 +37,7 @@ npm install
 
 # Create .env file with:
 PORT=3000
-MONGODB_URI=mongodb+srv://username:password@cluster0.hp7fshf.mongodb.net
+MONGODB_URI=your_mongodb_string_here
 MONGODB_NAME=News_Aggravator
 NEWS_API_KEY=your_newsapi_key
 
