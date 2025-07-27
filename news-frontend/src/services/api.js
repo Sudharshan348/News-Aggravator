@@ -1,10 +1,7 @@
 import axios from 'axios';
 
 const getApiBase = () => {
-  if (import.meta.env.PROD) {
-    return 'http://localhost:3000/api';
-  }
-  return 'http://localhost:3000/api';
+  return 'https://news-aggravator-production.up.railway.app/api';
 };
 
 const API_BASE = getApiBase();
