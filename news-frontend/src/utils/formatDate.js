@@ -45,8 +45,6 @@ export const formatDateOnly = (dateString) => {
     day: 'numeric'
   });
 };
-
-// Additional utility functions for date formatting
 export const formatRelativeDate = (dateString) => {
   const date = new Date(dateString);
   const now = new Date();

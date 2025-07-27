@@ -101,7 +101,6 @@ const Home = () => {
           </div>
         ) : (
           <>
-            {/* Stats Bar */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-8">
               <div className="flex items-center justify-between text-sm">
                 <span className="text-gray-600">
@@ -116,7 +115,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Articles Grid */}
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {headlines.map((article, index) => (
                 <NewsCard 
