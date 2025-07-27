@@ -1,7 +1,10 @@
 import axios from 'axios';
 
 const getApiBase = () => {
-  return 'https://news-aggravator-production.up.railway.app';
+  if (process.env.NODE_ENV === 'production') {
+    return 'https://news-aggravator-production.up.railway.app/api';
+  }
+  return 'http://localhost:3000/api';
 };
 
 const API_BASE = getApiBase();
