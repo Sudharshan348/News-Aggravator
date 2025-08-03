@@ -9,8 +9,12 @@ const getApiBase = () => {
 
 const API_BASE = getApiBase();
 
-const API = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/news',
+const api = axios.create({
+  baseURL: API_BASE,
+  timeout: 15000, 
+  headers: {
+    'Content-Type': 'application/json',
+  }
 });
 
 api.interceptors.request.use(
